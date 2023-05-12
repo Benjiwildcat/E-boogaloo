@@ -13,7 +13,7 @@ Category.hasMany(Product, {
 
 });
 // Products belongToMany Tags (through ProductTag)
-Product.belongsToMany(Category, {
+Product.belongsToMany(Tag, {
   through: ProductTag,
   onDelete: 'SET NULL'
 });
